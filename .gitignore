@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 migrations/
-my_flask/
+pythonflask_env/

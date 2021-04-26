@@ -8,8 +8,11 @@ class Company(db.Model):
     id = db.Column(db.BigInteger(), primary_key=True)
     company_name = db.Column(db.String())
 
-    def __init__(self, company_name):
+    def __init__(self, company_name=None):
         self.company_name = company_name
+
+    # def asdict(self):
+    #     return {'id': self.id, 'company_name': self.company_name}
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
